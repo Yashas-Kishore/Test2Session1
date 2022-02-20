@@ -1,1 +1,9 @@
-
+gcc -g p1original.c
+ ./a.out
+enter the coordinates of 1st point x and y as in (x,y)
+4
+5
+enter the coordinates of 2nd point x and y as in (x,y)
+8
+6
+the distance b/w the points (4.000000,5.000000) and (8.000000,6.000000) is 4.123106

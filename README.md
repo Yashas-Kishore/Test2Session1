@@ -1,4 +1,4 @@
-<br> 1.	Write a program to find the distance between two points
+ <br> 1.	Write a program to find the distance between two points
 		<br> void input(float \*x1, float \*y1, float \*x2, float \*y2);
 		<br> void find_distance(float x1, float y1, float x2, float y2, float *area);
 		<br> void output(float x1, float y1,float x2, float y2, float area);
@@ -11,7 +11,7 @@
 	<br> void input_line(float \*x1, float \*y1);
 	<br> int is_triangle(float x1, float y1, float x2, float y2,float x3, float y3)
 	<br> void output(float x1, float y1, float x2, float y2,float x3, float y3, int istriangle)
-
+  
 
 <br> 3.	Write a program find whether a given number is a prime number. 
 	<br> int input_number();
