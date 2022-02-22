@@ -1,1 +1,5 @@
-
+gcc -g p3original.c
+ ./a.out
+enter the number to check : 
+8
+the given number 8 is composite
