@@ -9,23 +9,27 @@ int input_number()
   return a;
 }
 
-int find_fibo(int n,int fib[n])
+void find_fibo(int n,int *fi[n])
 {
-  fib[n]=0;
+  fi[n]=0;
+  *fi[1]=0;
+  *fi[2]=1;
   for(int i=3;i<=n;i++)
     {
-      int fib[1]=0;
-      int fib[2]=1;
-      fib[n]=fib[i-1]+fib[i-2];
+      *fi[n]=*fi[i-1]+*fi[i-2];
     }
-  return fib[n];
 }
-void output(int n,int fibo)
+void output(int n,int *fibo)
 {
-  printf("the %d th fibonic number is %d",n,fibo);
+  printf("the %d th fibonic number is %d",n,*fibo);
 }
 
 int main()
 {
-  int 
+  int n;
+  n=input_number();
+  int fibonic[n];
+  find_fibo(n,&fibonic[n]);
+  output(n,fibonic);
+  return 0;
 }
