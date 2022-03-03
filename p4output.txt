@@ -1,1 +1,6 @@
 
+ gcc -g p4original.c
+ ./a.out
+enter the number of fibonacci sequence: 
+9
+the 9 th fibonic number is 21
