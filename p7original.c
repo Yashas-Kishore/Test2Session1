@@ -9,7 +9,6 @@ float x,y;
 struct _line
 {
 Point p1,p2;
-float distance;
 };
 typedef struct _line Line;
 
@@ -21,14 +20,30 @@ Point input_point()
   return f;
 }
 
-Line input_line()
+Line input_line(Line s)
 {
-  Line s;
-  float g,h;
+  
   s.p1=input_point();
   s.p2=input_point();
-  g=(s.p1.x - s.p2.x) * (s.p1.x - s.p2.x);
-  h=(s.p1.y - s.p2.y) * (s.p1.y - s.p2.y);
-  s.distance=sqrt(g + h);
   return s;
+}
+void find_length(Line *l,float *distance)
+{
+  float g,h;
+  g=pow((l->p1.x - l->p2.x),2);
+  h=pow((l->p1.y - l->p2.y),2);
+  *distance=sqrt(g + h);
+  // return distance;
+}
+
+int main()
+{
+  Line c;
+  float D;
+  c=input_line(c);
+  find_length(&c,&D);
+  printf("the lenght of the given linr is %f",D);
+  return 0;
+  
+  
 }
